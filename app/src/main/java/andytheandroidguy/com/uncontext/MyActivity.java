@@ -241,24 +241,11 @@ public class MyActivity extends Activity {
         }
     }
 
-
-//    private void draw() {
-//        Animation hyperspaceJumpAnimation = AnimationUtils.loadAnimation(this, R.anim.hyper);
-//        hyperspaceJumpAnimation.setRepeatCount(Animation.INFINITE);
-//        view1.startAnimation(hyperspaceJumpAnimation);
-//        view2.startAnimation(hyperspaceJumpAnimation);
-//        view3.startAnimation(hyperspaceJumpAnimation);
-//        view4.startAnimation(hyperspaceJumpAnimation);
-//        view5.startAnimation(hyperspaceJumpAnimation);
-//
-//    }
-
     private void drawRebound (Spring spring, double value) {
         // Set the spring in motion; moving from 0 to 1
         spring.setEndValue(value);
 
     }
-
 
     private void setColor(double num, View view){
         if(num < 0) num = 0;
@@ -272,8 +259,6 @@ public class MyActivity extends Activity {
         if (g < 0) g = 0;
         if (blue > 255) blue = 255;
         if (blue < 0) blue = 0;
-
-        Log.d("HUE", r + ", " + g + ", " + blue);
 
         int color = getIntFromColor(r, g, blue);
 
